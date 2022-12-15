@@ -1,11 +1,6 @@
 import Axios from "axios";
 const defaultAxios = Axios.create({
-  headers: {
-    accept: "application/json",
-    Authorization:
-      "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwidXNlcm5hbWUiOiJMaWxsYS5Ucm9tcCIsImlhdCI6MTY3MTEwMzg1NSwiZXhwIjoxNjcxNzAzODU1fQ.KqNkmtPujDsAIR6rG9TtTAuTOa1VKb5S_VlgxyIKZVw",
-    "Content-Type": "application/json",
-  },
+  headers: { "Content-Type": "application/json" },
 });
 defaultAxios.interceptors.response.use(
   (res) => {

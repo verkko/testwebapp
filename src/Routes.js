@@ -1,5 +1,5 @@
 import React from "react";
-import DesktopOne from "pages/DesktopOne";
+import Index from "pages/Index";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "pages/Home";
 import NotFound from "pages/NotFound";
@@ -7,9 +7,9 @@ const ProjectRoutes = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Index />} />
         <Route path="*" element={<NotFound />} />
-        <Route path="/desktopone" element={<DesktopOne />} />
+        <Route path="/dhiwise-dashboard" element={<Home />} />
       </Routes>
     </Router>
   );

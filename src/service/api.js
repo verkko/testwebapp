@@ -1,7 +1,7 @@
 import { apis } from "service";
 
-const COMMON_URL = `https://e39237-kend-sandbox.dhiwise.co/admin/user/`;
+const COMMON_URL = `https://nodedemo.dhiwise.co/device/auth/`;
 
-const API_URLS = { POST_CREATE: `${COMMON_URL}create` };
+const API_URLS = { POST_LOGIN: `${COMMON_URL}login` };
 
-export const postCreate = (payload) => apis.post(API_URLS.POST_CREATE, payload);
+export const postLogin = (payload) => apis.post(API_URLS.POST_LOGIN, payload);
